@@ -1,0 +1,124 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header input {
+    width: 70%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+header button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+header button:hover {
+    background-color: #45a049;
+}
+
+/* Task List Styling */
+.tasks {
+    margin-bottom: 20px;
+}
+
+.tasks h2 {
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.tasks ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tasks li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    transition: background-color 0.2s;
+}
+
+.tasks li.complete {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.tasks li:hover {
+    background-color: #f9f9f9;
+}
+
+/* Button Styling */
+.tasks button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tasks button:hover {
+    background-color: #e55347;
+}
+
+.tasks button.complete-button {
+    background-color: #4CAF50;
+    margin-right: 5px;
+}
+
+.tasks button.complete-button:hover {
+    background-color: #45a049;
+}
+
+.tasks button.edit-button {
+    background-color: #ff9800;
+    margin-right: 5px;
+}
+
+.tasks button.edit-button:hover {
+    background-color: #e68900;
+}
